@@ -1,0 +1,326 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: Decoder4To6.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Decoder4To6.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Decoder4To6"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : Decoder4To6
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Subjects/4 semester/Modul Computer System/Lab1/Lab1_v11/Decoder/Decoder4To6.vhf" in Library work.
+Entity <IBUF4_HXILINX_Decoder4To6> compiled.
+Entity <IBUF4_HXILINX_Decoder4To6> (Architecture <IBUF4_HXILINX_Decoder4To6_V>) compiled.
+Entity <OBUF4_HXILINX_Decoder4To6> compiled.
+Entity <OBUF4_HXILINX_Decoder4To6> (Architecture <OBUF4_HXILINX_Decoder4To6_V>) compiled.
+Entity <Decoder4To6> compiled.
+Entity <Decoder4To6> (Architecture <BEHAVIORAL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Decoder4To6> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <IBUF4_HXILINX_Decoder4To6> in library <work> (architecture <IBUF4_HXILINX_Decoder4To6_V>).
+
+Analyzing hierarchy for entity <OBUF4_HXILINX_Decoder4To6> in library <work> (architecture <OBUF4_HXILINX_Decoder4To6_V>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Decoder4To6> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <Decoder4To6>.
+    Set user-defined property "HU_SET =  XLXI_2_1" for instance <XLXI_2> in unit <Decoder4To6>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_3> in unit <Decoder4To6>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_3> in unit <Decoder4To6>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_3> in unit <Decoder4To6>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_4> in unit <Decoder4To6>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4> in unit <Decoder4To6>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_4> in unit <Decoder4To6>.
+    Set user-defined property "INIT =  E804" for instance <XLXI_10> in unit <Decoder4To6>.
+    Set user-defined property "INIT =  8002" for instance <XLXI_18> in unit <Decoder4To6>.
+    Set user-defined property "INIT =  1C23" for instance <XLXI_34> in unit <Decoder4To6>.
+Entity <Decoder4To6> analyzed. Unit <Decoder4To6> generated.
+
+Analyzing Entity <IBUF4_HXILINX_Decoder4To6> in library <work> (Architecture <IBUF4_HXILINX_Decoder4To6_V>).
+Entity <IBUF4_HXILINX_Decoder4To6> analyzed. Unit <IBUF4_HXILINX_Decoder4To6> generated.
+
+Analyzing Entity <OBUF4_HXILINX_Decoder4To6> in library <work> (Architecture <OBUF4_HXILINX_Decoder4To6_V>).
+Entity <OBUF4_HXILINX_Decoder4To6> analyzed. Unit <OBUF4_HXILINX_Decoder4To6> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <IBUF4_HXILINX_Decoder4To6>.
+    Related source file is "D:/Subjects/4 semester/Modul Computer System/Lab1/Lab1_v11/Decoder/Decoder4To6.vhf".
+Unit <IBUF4_HXILINX_Decoder4To6> synthesized.
+
+
+Synthesizing Unit <OBUF4_HXILINX_Decoder4To6>.
+    Related source file is "D:/Subjects/4 semester/Modul Computer System/Lab1/Lab1_v11/Decoder/Decoder4To6.vhf".
+Unit <OBUF4_HXILINX_Decoder4To6> synthesized.
+
+
+Synthesizing Unit <Decoder4To6>.
+    Related source file is "D:/Subjects/4 semester/Modul Computer System/Lab1/Lab1_v11/Decoder/Decoder4To6.vhf".
+Unit <Decoder4To6> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Decoder4To6> ...
+
+Optimizing unit <IBUF4_HXILINX_Decoder4To6> ...
+
+Optimizing unit <OBUF4_HXILINX_Decoder4To6> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Decoder4To6, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Decoder4To6.ngr
+Top Level Output File Name         : Decoder4To6
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 5
+#      AND4B4                      : 1
+#      INV                         : 1
+#      LUT4                        : 3
+# IO Buffers                       : 10
+#      IBUF                        : 4
+#      OBUF                        : 6
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                        2  out of    704     0%  
+ Number of 4 input LUTs:                  4  out of   1408     0%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    108     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 6.745ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 18 / 6
+-------------------------------------------------------------------------
+Delay:               6.745ns (Levels of Logic = 4)
+  Source:            IN_0 (PAD)
+  Destination:       OUT_0 (PAD)
+
+  Data Path: IN_0 to OUT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.824   0.607  IN_0_IBUF (IN_0_IBUF)
+     begin scope: 'XLXI_1'
+     end scope: 'XLXI_1'
+     LUT4:I0->O            1   0.561   0.357  XLXI_10 (XLXN_20)
+     begin scope: 'XLXI_2'
+     end scope: 'XLXI_2'
+     OBUF:I->O                 4.396          OUT_4_OBUF (OUT_4)
+    ----------------------------------------
+    Total                      6.745ns (5.781ns logic, 0.964ns route)
+                                       (85.7% logic, 14.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.81 secs
+ 
+--> 
+
+Total memory usage is 4533916 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
